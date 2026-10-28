@@ -18,5 +18,20 @@ Set up a FastAPI backend and React/TypeScript frontend, then display a small lis
 
 ## Current Status
 
-Repository created. Working on the Week 1 project foundation.
-Application functionality has not been implemented yet.
+Implemented basic FastAPI where it runs GET /health and returns "status" : "ok"
+
+## Backend Setup
+
+Run these commands from the repository root:
+
+```powershell
+cd backend
+python -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -r requirements.txt
+.\.venv\Scripts\fastapi.exe dev main.py
+```
+
+Open http://127.0.0.1:8000/health.
+Expected response: HTTP 200 with `{"status": "ok"}`.
+
+Interactive API documentation: http://127.0.0.1:8000/docs.
