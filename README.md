@@ -35,3 +35,21 @@ Open http://127.0.0.1:8000/health.
 Expected response: HTTP 200 with `{"status": "ok"}`.
 
 Interactive API documentation: http://127.0.0.1:8000/docs.
+
+## Frontend Setup
+
+From the repository root:
+
+```powershell
+cd frontend
+npm.cmd install
+npm.cmd run dev
+```
+
+Open the local URL printed in the terminal.
+
+To check the production build:
+
+```powershell
+npm.cmd run build
+```
